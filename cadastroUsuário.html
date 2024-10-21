@@ -4,7 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cadastro</title>
-        <link rel="stylesheet" href="cadastroUsuario.css">
+        <link rel="stylesheet" href="/css/cadastroUsuario.css">
+        <link rel="icon" href="/img/logo.png" type="image/png">
+        <script>
+            
+            function redirecionar() {
+                
+                var ong = document.getElementById('ong').checked;
+                var empresa = document.getElementById('empresa').checked;
+                
+
+                if (ong) {
+                    window.location.href = "LoginONG.html"; 
+                } else if (empresa) {
+                    window.location.href = "LoginCNPJ.html"; 
+                } else {
+                    alert("Por favor, selecione ONG ou Empresa."); 
+                }
+            }
+        </script>
     </head>
     <body>
         <main>
@@ -13,9 +31,9 @@
             
             <div class="wrapper">
                 
-            <form action="#" method="get">
+            <form onsubmit="event.preventDefault(); redirecionar();">
                 <section>
-                    <p>Cadastra-se como Empresa ou ONG?</p>
+                    <p>CADASTRE-SE COMO EMPRESA OU ONG</p>
                     <br>
                     <input type="radio" id="ong" name="option" required>
                     <label for="ong">ONG</label> 
@@ -45,7 +63,11 @@
                 </section>
                 <br>
                 <section>
-                    <button type="submit" class="enviar">Enviar</button>
+                    <!-- Botão de envio -->
+                    <button type="submit" class="enviar">CADASTRE-SE</button>
+                    <br><br>
+                    <!-- Botão de voltar -->
+                    <a href="index.html"><button type="button" class="voltar">Voltar</button></a>
                 </section>
             </form>
 

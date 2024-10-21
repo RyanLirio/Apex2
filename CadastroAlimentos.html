@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de alimentos</title>
-    <link rel="stylesheet" href="header.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/cadastroUsuario.css">
+    <link rel="icon" href="/img/logo.png" type="image/png">
 </head>
+<body>
+    <main>
 
-<body><header class="header">
-    <a href="#" class="logo">Logo</a>
+        <h1>Página de Cadastro</h1>
 
-    <input type="checkbox" id="check">
-    <label for="check" class="icons">
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <i class='bx bx-x' id="close-icon"></i>
-    </label>
+        <div class="wrapper">
+            <form action="#" method="get">
+                <section class="tipo-cadastro">
+                    <p>CADASTRE ALIMENTO</p>
+                    <div class="opcoes">
+                        <input type="radio" id="ong" name="option" required>
+                        <label for="ong">ONG</label>
+                        <input type="radio" id="empresa" name="option" required>
+                        <label for="empresa">Empresa</label>
+                    </div>
+                </section>
 
-    <nav class="navbar">
-        <a href="#" style="--i:2;">Sair</a>
-        <a href="#" style="--i:4;">Inicio</a>
-        <a href="#" style="--i:6;">Contato</a>
-    </nav>
-</header>
+                <section class="entradas">
+                    <input type="number" id="cnpj" name="cnpj" placeholder="CNPJ" required>
+                </section>
+
+                <section class="entradas">
+                    <input type="text" id="nomeorg" name="nomeorg" placeholder="Nome da organização" required>
+                </section>
+
+                <section class="entradas">
+                    <input type="text" id="cep" name="cep" placeholder="CEP" required>
+                </section>
+
+                <section class="entradas">
+                    <input type="text" name="redes" id="redes" placeholder="Site/Redes Sociais" required>
+                </section>
+
+                <section class="entradas">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </section>
+
+                <section class="botao-enviar">
+                    <button type="submit" class="enviar">Enviar</button>
+                </section>
+            </form>
+        </div>
+    </main>
 </body>
-
 </html>

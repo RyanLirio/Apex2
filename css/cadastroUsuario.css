@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(155, 3, 3);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.wrapper p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tipo-cadastro .opcoes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tipo-cadastro input {
+    margin-right: 5px;
+}
+
+.tipo-cadastro label {
+    color: white;
+    font-size: 16px;
+}
+
+.entradas {
+    margin-bottom: 20px;
+}
+
+.entradas input {
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.entradas input:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao-enviar {
+    margin-top: 20px;
+}
+
+.enviar {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    color: rgb(155, 3, 3);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.voltar {
+    width: 100%;
+    padding: 12px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    color: rgb(155, 3, 3);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.enviar:hover {
+    background: rgb(155, 3, 3);
+    color: white;
+}
+
+.voltar:hover {
+    background: rgb(104, 87, 87);
+    color: white;
+}

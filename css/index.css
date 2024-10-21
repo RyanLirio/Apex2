@@ -1,0 +1,170 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    height: 100vh; /* O corpo cobre a altura inteira da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(155, 3, 3);
+    text-align: center; /* Centraliza o texto por padrão */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-img img
+{
+    width: 150px; /* Ajuste o tamanho da imagem aqui */
+    height: auto;
+}
+
+.title-img h2
+{
+    color: white;
+}
+
+.title-img hr
+{
+    width: 80%;
+    border: 1px solid white;
+    margin: 10px auto;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.login
+{
+    display: flex;
+    justify-content: space-around; /* Alinha os botões lado a lado */
+    gap: 20px; /* Espaçamento entre os botões */
+    width: 100%;
+}
+
+.hover-box {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+.hover-box {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+.hover-box {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+.hover-box {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 1s ease;
+    border-radius: 25px; /* Borda arredondada */
+    border: 2px solid transparent; /* Começa sem borda */
+}
+
+.hover-box:hover {
+    border: 2px solid white; /* Aparece a borda ao passar o mouse */
+}
+
+
+
+
+.login a
+{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login a:hover
+{
+    text-decoration: underline;
+    text-decoration: none;
+    background: rgb(255, 0, 0);
+    color: white;
+    
+}
+
+.NPC p
+{
+    color: white;
+    margin-top: 20px;
+}
+
+.cadastro a
+{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cadastro a:hover
+{
+    text-decoration: none;
+    background: rgb(255, 0, 0);
+    color: white;
+    
+}
+
+.logar {
+    color: white;
+}
+
