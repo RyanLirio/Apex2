@@ -22,6 +22,7 @@
             
             <div class="wrapper">
                 <h2>Os dados para o seu cadastro foram coletados com sucesso. Em breve entraremos em contato.</h2>
+                <br><br>
                 <section>
                     <!-- Botão de voltar -->
                     <a href="index.php"><button type="button" class="voltar">Voltar</button></a>
