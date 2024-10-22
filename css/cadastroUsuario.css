@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     background: rgb(155, 3, 3);
     text-align: center;
+    
 }
 
 h1 {
@@ -25,7 +26,6 @@ h1 {
 .wrapper {
     background: rgba(255, 255, 255, 0.1);
     padding: 40px 30px;
-    border-radius: 10px;
     backdrop-filter: blur(15px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -112,4 +112,34 @@ h1 {
 .voltar:hover {
     background: rgb(104, 87, 87);
     color: white;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 20px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }

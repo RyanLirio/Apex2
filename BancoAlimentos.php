@@ -3,7 +3,7 @@
 
     if(isset($_COOKIE["userCookie"])){
         //header("Location: VerificarLogin.php");
-     }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco de alimentos</title>
+    <title>Banco de Alimentos</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/cadastroUsuario.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -33,12 +33,14 @@
             <a href="#" style="--i:6;">Contato</a>
         </nav>
     </header>
+    
     <table>
         <tr>
             <th>Alimento</th>
             <th>Quantidade</th>
             <th>Preparado em</th>
-            <th>Disponivel até</th>
+            <th>Disponível até</th>
+
         </tr>
 
         <?php
@@ -46,13 +48,26 @@
 
             for ($i = 0; $i < $total; $i++) {
                 echo "<tr>";
+
                 echo "<td>" . htmlspecialchars($_SESSION['alimentos']['nome'][$i]) . "</td>"; 
                 echo "<td>" . htmlspecialchars($_SESSION['alimentos']['quant'][$i]) . "</td>"; 
                 echo "<td>" . htmlspecialchars($_SESSION['alimentos']['preparo'][$i]) . "</td>"; 
                 echo "<td>" . htmlspecialchars($_SESSION['alimentos']['disp'][$i]) . "</td>"; 
+                echo "<td>";
+
+                //remover
+                echo "<form method='POST' action='Alimentos.php''>";
+                echo "<input type='hidden' name='remove' value='$i'>"; // Índice a ser removido
+                echo "<input type='submit' value='Reservar' onclick='return confirm(\"Tem certeza que deseja remover este dado?\")'>";
+                echo "</form>";
+                echo "</td>";
                 echo "</tr>";
-            } 
+            }
        ?>
     </table>
+
+    
+        </form>
+    </section>
 </body>
 </html>

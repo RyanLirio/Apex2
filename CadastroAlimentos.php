@@ -22,17 +22,6 @@
 
 </head>
 <body>
-       <header class="header">
-       <a href="#"><img src="img/logo.png" alt="Logo"></a>
-
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-       </header>
-
-
         <div class="wrapper">
         <h1>CADASTRO DE ALIMENTOs</h1>
         <?php if(isset($msg)) : ?>
