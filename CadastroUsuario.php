@@ -1,3 +1,11 @@
+<?php
+
+    session_start();
+    if(isset($_COOKIE["userCookie"])){
+        header("Location: VerificarLogin.php");
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,24 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cadastro</title>
         <link rel="stylesheet" href="css/cadastroUsuario.css">
-        <link rel="icon" href="/img/logo.png" type="image/png">
-        <script>
-            
-            function redirecionar() {
-                
-                var ong = document.getElementById('ong').checked;
-                var empresa = document.getElementById('empresa').checked;
-                
-
-                if (ong) {
-                    window.location.href = "LoginONG.html"; 
-                } else if (empresa) {
-                    window.location.href = "LoginCNPJ.html"; 
-                } else {
-                    alert("Por favor, selecione ONG ou Empresa."); 
-                }
-            }
-        </script>
+        <link rel="icon" href="img/logo.png" type="image/png">
     </head>
     <body>
         <main>
@@ -31,12 +22,12 @@
             
             <div class="wrapper">
                 
-            <form onsubmit="event.preventDefault(); redirecionar();">
+            <form form method="POST" action="ValidarCadastroUsuario.php"">
                 <section>
                     <p>CADASTRE-SE COMO EMPRESA OU ONG</p>
                     <br>
                     <input type="radio" id="ong" name="option" required>
-                    <label for="ong">ONG</label> 
+                    <label for="ong">ONG</label>
                     &emsp;
                     <input type="radio" id="empresa" name="option" required>
                     <label for="empresa">Empresa</label>
@@ -67,7 +58,7 @@
                     <button type="submit" class="enviar">CADASTRE-SE</button>
                     <br><br>
                     <!-- Botão de voltar -->
-                    <a href="index.html"><button type="button" class="voltar">Voltar</button></a>
+                    <a href="index.php"><button type="button" class="voltar">Voltar</button></a>
                 </section>
             </form>
 

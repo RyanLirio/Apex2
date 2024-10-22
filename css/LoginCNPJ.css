@@ -105,3 +105,16 @@ body
 .registre p a:hover{
     text-decoration: underline;
 }
+
+.voltar {
+    width: 100%;
+    padding: 12px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    color: rgb(155, 3, 3);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
